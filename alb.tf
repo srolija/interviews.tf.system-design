@@ -42,7 +42,7 @@ resource "aws_lb_listener" "front_end" {
     fixed_response {
       content_type = "text/plain"
       message_body = "You hit the ALB!"
-      status_code  = "304"
+      status_code  = "403"
     }
   }
 }
